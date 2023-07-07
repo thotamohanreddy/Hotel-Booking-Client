@@ -1,6 +1,5 @@
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route} from "react-router-dom";
 
-import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Homescreen from "./screens/Homescreen";

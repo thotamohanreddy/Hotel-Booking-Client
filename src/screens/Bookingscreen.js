@@ -13,7 +13,7 @@ function Bookingscreen({ match }) {
   const [totalAmount, setTotalAmount] = useState(0);
   const [totalDays, setTotalDays] = useState(0);
 
-  const roomid = match.params.roomid;
+
   const fromdate = moment(match.params.fromdate, "DD-MM-YYYY");
   const todate = moment(match.params.todate, "DD-MM-YYYY");
 

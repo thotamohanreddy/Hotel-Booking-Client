@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 
 import { Tabs } from "antd";
 import AdminBookingScreen from "./AdminBookingScreen";
@@ -13,7 +13,7 @@ function AdminScreen() {
   const user = JSON.parse(localStorage.getItem("currentUser"));
 
   useEffect(() => {
-    if (!user || user.isAdmin == false) {
+    if (!user || user.isAdmin === false) {
       window.location.href = "/home";
     }
   }, []);

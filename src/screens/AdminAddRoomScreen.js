@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useState } from "react";
 import { Form, Input, InputNumber, Button, Select } from "antd";
 
 import Swal from "sweetalert2";
@@ -23,7 +22,7 @@ const tailLayout = {
 function AdminAddRoomScreen() {
   const { Option } = Select;
 
-  const [room, setRoom] = useState({});
+  
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
@@ -34,7 +33,7 @@ function AdminAddRoomScreen() {
     setError("");
     setLoading(true);
     try {
-      const data = (await axios.post("/api/rooms/addroom", values)).data;
+
       Swal.fire("Congratulations", "Your Room Added Successfully", "success");
       form.resetFields();
     } catch (error) {
