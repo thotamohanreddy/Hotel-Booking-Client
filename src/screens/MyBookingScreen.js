@@ -39,7 +39,7 @@ function MyBookingScreen() {
     setLoading(true);
     try {
       const data = (
-        await axios.post("/api/bookings/cancelbooking", {
+        await axios.post("https://hotelbookingserver.onrender.com/api/bookings/cancelbooking", {
           bookingid,
           roomid,
         })
